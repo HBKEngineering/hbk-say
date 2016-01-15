@@ -10,19 +10,22 @@ var ansiRegex = require('ansi-regex')();
 var topOffset = 1;
 var leftOffset = 1
 
-var defaultGreeting = chalk.red(
-'\n ,,,,,,,,,,,,,,,,,,        ,,,,,,      ,,,,,,,,,,,,  ,,,      ,,, ' +       
-'\n SSSSSSSSSSSSSSSSSSSQ   ;QSSSSSSSSSQ,  SSSSSSSSSSSS  SSSQ    ]SSSQ' +       
-'\n SSS#""""@SSS""""YSSSQ  SSSS"""""QSSS  ^T777T@SSS#^  SSSQ    ]SSSQ' +       
-'\n SSS[    @SSS     SSS[  SSSb     ]SSS      ,QSSSN    SSSQ    ]SSSQ' +       
-'\n SSS[    @SSS     SSS[  SSSb     ]SSS     #SSSM|     SSSQ    ]SSSQ' +       
-'\n SSS[    @SSS     SSS[  SSSQ     @SSS   #QSSS^       SSSQ    ]SSSQ' +       
-'\n SSS[    @SSS     SSS[  QSSSQQQQQSSSF  SSSSSSSSSSSS  %SSSSSSSSSSSQ' +       
-'\n PPP"    "PPP     PPP+   ^FBWWWWBEP`   "PPPPPPPPPPT    "+PPPPPPPP"' +       
+var defaultGreeting = chalk.blue(
+'\n  ___        ___       ___        ' + 
+'\n (   )      (   )     (   )       ' + 
+'\n  | | .-.    | |.-.    | |   ___  ' +  
+'\n  | |/   \   | /   \   | |  (   ) ' +  
+'\n  |  .-. .   |  .-. |  | |  \' /   ' +  
+'\n  | |  | |   | |  | |  | |,\' /    ' +  
+'\n  | |  | |   | |  | |  | .  \'.    ' +  
+'\n  | |  | |   | |  | |  | | `. \   ' +  
+'\n  | |  | |   | \'  | |  | |   \ \  ' +  
+'\n  | |  | |   \' `-\' ;   | |    \ . ' +  
+'\n (___)(___)   `.__.   (___ ) (___)' +
 "\n");
 
 module.exports = function (message, options) {
-  message = (message || 'Welcome to Yeoman, powered by Mozu.').trim();
+  message = (message || 'Welcome to HBK Engineering').trim();
   options = options || {};
 
   /*
